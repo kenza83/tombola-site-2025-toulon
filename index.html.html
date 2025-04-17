@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Numéro Tombola</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 100px;
+      background-color: #f2f2f2;
+    }
+    .numero {
+      font-size: 60px;
+      font-weight: bold;
+      color: #ff5722;
+    }
+  </style>
+</head>
+<body>
+  <h1>Merci pour ta participation 🎉</h1>
+  <p>Ton numéro de tombola est :</p>
+  <div class="numero" id="num"></div>
+
+  <script>
+    const num = Math.floor(Math.random() * 1000) + 1; // Numéro entre 1 et 1000
+    document.getElementById("num").innerText = num;
+  </script>
+</body>
+</html>
